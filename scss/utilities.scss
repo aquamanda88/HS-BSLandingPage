@@ -1,0 +1,45 @@
+.fz-l{
+    font-size: 28px;
+}
+.fz-m{
+    font-size: 24px;
+}
+.fz-s{
+    font-size: 18px;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-300{
+    font-weight: 300;
+}
+.ta-c{
+    text-align: center;
+}
+
+@mixin PC-sm{
+    @media(max-width: 1024px){
+      @content;
+    }
+}
+@mixin pad{
+    @media(max-width: 768px){
+      @content;
+    }
+}
+@mixin phone{
+    @media(max-width: 560px){
+        @content;
+    }
+}
+
+@include PC-sm{
+    .aboutUs{
+        .chefImg{
+            height: 480px;
+        }
+    }
+}

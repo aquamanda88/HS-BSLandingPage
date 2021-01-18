@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角西餐廳</title>    
+    <link rel="icon" href="img/logo.ico" type="img/x-icon"/>
+    <meta name='description' content="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。" />
+    <meta property="og:title" content="六角學院形象網頁" />
+    <meta property="og:description" content="主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均有業界開發經驗，讓學員學習業界主流的開發方法。">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bootstrap.hexschool.com/" />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1139485184464523264/Ul78v4sv_400x400.png" />
+    <link href="https://s2.aconvert.com/convert/p3r68-cdx67/a1yrt-4cw5i-001.ico" rel="apple-touch-icon" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="iconList bg-b-dark">
+        <div class="container">
+            <ul class="row justify-content-end align-items-center w-100">
+                <li class="icon-item mr-1 fz-m">
+                    <a href="#"><i class="fab fa-twitter-square text-light"></i></a>
+                </li>
+                <li class="icon-item fz-m">
+                    <a href="#"><i class="fab fa-facebook-square text-light"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="row justify-content-between w-100">
+                <h1 class="mb-0 d-flex align-items-center">
+                    <a class="navbar-brand fw-700 fz-m" href="index.html">六角西餐廳</a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                美味菜單
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">本月精選</a>
+                                <a class="dropdown-item" href="#">熱銷品項</a>
+                                <a class="dropdown-item" href="#">年節特惠</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="btnGroup d-flex">
+                        <li>
+                            <button type="button" class="btn btn-outline-primary mr-1" data-toggle="modal" data-target="#loginModal">登入</button>
+                        </li>
+                        <!-- loginModal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header bg-gray">
+                                    <h5 class="modal-title" id="loginModalLabel">登入 Log In</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body d-flex flex-column flex-md-row justify-content-center align-items-center">
+                                    <img class="loginImg" src="img/Login.svg" alt="">
+                                    <form class="loginForm p-4">
+                                        <div class="form-group">
+                                          <label for="accountInput" class="col-form-label">帳號</label>
+                                          <div>
+                                            <input type="email" class="form-control" id="accountInput" placeholder="請輸入帳號">
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="passwordInput" class="col-form-label">密碼</label>
+                                          <div>
+                                            <input type="password" class="form-control" id="passwordInput" placeholder="請輸入密碼">
+                                          </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                    <button type="button" class="btn btn-primary">登入</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">註冊</button>
+                        </li>
+                        <!-- signupModal -->
+                        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-gray">
+                                        <h5 class="modal-title" id="signupModalLabel">註冊 Sign Up</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column flex-md-row justify-content-center align-items-center">
+                                        <img class="signupImg" src="img/Signup.png" alt="">
+                                        <form class="signupForm p-4">
+                                            <div class="form-group">
+                                            <label for="accountInput" class="col-form-label">帳號</label>
+                                            <div>
+                                                <input type="email" class="form-control" id="accountInput" placeholder="請輸入帳號">
+                                            </div>
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="passwordInput" class="col-form-label">密碼</label>
+                                            <div>
+                                                <input type="password" class="form-control" id="passwordInput" placeholder="請輸入密碼">
+                                            </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                                    <button type="button" class="btn btn-primary">註冊</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </nav>
+    <div id="carouselArea" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselArea" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselArea" data-slide-to="1"></li>
+          <li data-target="#carouselArea" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-img desertImg"></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fz-l fw-400">一個人，田野間的輕鬆美味</h5>
+                  <p>制的個年達論中舉求回因們成解基領：得物我，還件因專中大本不子了車成工南給也者廣，明男法月確險有不任是：羅們玩對聲教子國於表的團：人石傳代來。女住去輕的了色原重，所而出形用！一導是李留布這會皮？</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img pastaImg"></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fz-l fw-400">一個人，田野間的輕鬆美味</h5>
+                  <p>制的個年達論中舉求回因們成解基領：得物我，還件因專中大本不子了車成工南給也者廣，明男法月確險有不任是：羅們玩對聲教子國於表的團：人石傳代來。女住去輕的了色原重，所而出形用！一導是李留布這會皮？</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img steakImg"></div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fz-l fw-400">一個人，田野間的輕鬆美味</h5>
+                  <p>制的個年達論中舉求回因們成解基領：得物我，還件因專中大本不子了車成工南給也者廣，明男法月確險有不任是：羅們玩對聲教子國於表的團：人石傳代來。女住去輕的了色原重，所而出形用！一導是李留布這會皮？</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselArea" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselArea" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section class="slogan bg-info text-light">
+        <div class="container py-8">
+            <ul class="row">
+                <li class="col-md-4 mb-4 mb-md-0">                    
+                    <h3 class="fw-300"><i class="fas fa-utensils mr-4"></i>忘卻不了果莓香</h3>
+                    <p class="mb-0">運車小，新回臺文任會位安一夠，以機他下世臺器坡是陸起大家石知會物民天心加可期以來熱動比學為代。才牛優年，腦水現個器達不的官於一道海家自皮及告這息里，經原他……發在們數大，以為根本！會場有存推爭名區沒：這大個生賽光龍該，身已運從演接等而，會眼地管的！</p>
+                </li>
+                <li class="col-md-4 mb-4 mb-md-0">                    
+                    <h3 class="fw-300"><i class="fas fa-utensils mr-4"></i>積沈在心中的漣漪</h3>
+                    <p class="mb-0">行兒一；上海臺是道出隊年員一由多的為圖和：眼親地命史有不她經們生全外計寫相入使公？加的應……樂多品當個有角背沒，光味天笑時助題設對一人的度起出血河有朋我上他白民異格男之聲來舉人行。國同的業方率時得正學靈作而法有呢色正而。</p>
+                </li>
+                <li class="col-md-4">                    
+                    <h3 class="fw-300"><i class="fas fa-utensils mr-4"></i>放不下的體脂肪</h3>
+                    <p class="mb-0">的出基字他曾心，候演不電放、參了公兒我場在人長寫率。原別多。方委行也不這對母消新即一劇都為不大上票情、個黨相先三運上動出不，登式今時。市界得教不更舉家連育念的中父，位往百決漸功紀沒樹；她大然電線要滿我大有我法式人候為實麼？</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="aboutUs container-fluid bg-gray">
+        <div class="row flex-column flex-md-row">
+            <div class="col-lg-5 chefImg"></div>
+            <div class="col-12 col-lg-7 d-flex flex-column">
+                <div class="container py-8">
+                    <div class="wellcome mb-8">
+                        <h3 class="fw-300">歡迎來到六角餐廳</h3>
+                        <p>現日學是的事面職年八。兒她交；保社變小班升人屋。士的獨黨、學經趣令滿片化星其人一家道為爸回著王商苦故快？母而可不眾車前、到景已裡沒續，所沒當父座大太務天同，水己了結馬？女對利到自則你，相主學童劇方氣不滿到片低為思就回當平外、小管古我……話刻吃來得土未知是進在有制養度由。</p>
+                        <button class="btn btn-outline-primary">了解更多</button>
+                    </div>
+                    <ul class="row">
+                        <li class="col-12 col-lg-6">
+                            <h3 class="fw-300">當交的強來提進英有難</h3>
+                            <p>雖連間要愛大時氣真為要了兩車，禮是快久教那夫野立神登反方合是，是把一，系立你所公民。獲口有、樂們許高平別。法取阿級不克和來不裡老工長文，分單童樂、示長語不燈；重平為運食意常這看到農處開吃驚加可！得兒才人為臺環影在時下不，生節做說放看車一子那列教過民部！</p>
+                        </li>
+                        <li class="col-12 col-lg-6">
+                            <h3 class="fw-300">他指時門起說</h3>
+                            <p>一養著以環吃有轉一作會統裡不言；過登白有里式的車。請道覺土得，道去南國在會、基化的開。場家選個型無士友正不北陸漸且業線善童物集始飛成了們起構。做布來苦慢清望傷小這在真而十當防賽，軍語那在不第眾果再天規，李車中濟自新記真位成吃作期熱具他家業們經不底。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delicious">
+        <div class="container py-8">
+            <div class="row flex-column">
+                <h2 class="ta-c mb-4">如何這麼美味</h2>
+                <ul class="d-flex flex-wrap justify-content-center align-items-center">
+                    <li class="col-12 col-lg-6 my-8">
+                        <h3>
+                            <i class="fas fa-concierge-bell"></i>
+                            美艷的食材
+                        </h3>
+                        <p>味我小刻股灣打打臺乎但力家明參。了館風散維這先後，望自南，道代合了出水論金情的她天你苦手展，安動放！兒有個學滿……溫新李著的車實車：樓另道。我馬變國！細小讓……變好球都為市，喜道合，他影標來個。用單心政程由經住。在史利他登基高當作色？</p>
+                    </li>
+                    <li class="col-12 col-lg-6 my-8">
+                        <h3>
+                            <i class="fas fa-concierge-bell"></i>
+                            里隧道貫
+                        </h3>
+                        <p>灣語師治子那國個；的好生起來公友分感界持紀出認，心白人送：果曾式不河。依中沒行合空與親太間美神發人來提。一突不後企也建舞字發前葉般我生個們三她畫請，導是行那到那象列較又裡明心化好事經話黨府下友美乎行；打整具愛港沒的如全中自一自球驚不公。</p>
+                    </li>
+                    <li class="col-12 col-lg-6 my-8">
+                        <h3>
+                            <i class="fas fa-concierge-bell"></i>
+                            是貝德花芬是槐格納
+                        </h3>
+                        <p>明友女但：一不受下小，些動只；愛出度都在賣於改出起策方得卻實共就老國。好里臺從，日臺童日事美論手得離品：西精做臺日了職。只現自又無經山是展了公命在能人我水後小爾就幾共，告一蘭行應表服年共論而物？選差馬人一或吸此地自壓大，還不士新達，聯研有話縣友子。</p>
+                    </li>
+                    <li class="col-12 col-lg-6 my-8">
+                        <h3>
+                            <i class="fas fa-concierge-bell"></i>
+                            我官美下
+                        </h3>
+                        <p>樓有兒統廣禮未不呢作熱代裡行式重公省念來思物好就種個喜來府歌孩兒課以！年直比已量簡……的名車人入怎和相益子正不味的不的時供、的離美全女怎越，說片更？和算書果來出了何我空本好候為也幾，出點可女唱認麼確同？果問單我計旅重人包務。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="happiness container-fluid bg-gray">
+        <div class="row flex-column flex-md-row flex-md-row-reverse">
+            <div class="col-lg-5 childImg"></div>
+            <div class="col-12 col-lg-7 d-flex flex-column">
+                <div class="container py-8">
+                    <div class="row">
+                        <h3 class="fw-300 col-12">讓快樂持續發生</h3>
+                        <p class="col-12">世他由紀被多果分情如戲面，過以一達……後不年心安能開球經眼日情西校生。</p>
+                        <ul class="container">
+                            <li class="row">
+                                <h4 class="fw-400 col-12 col-md-3 fz-s">臺我有學傳以相建</h4>
+                                <p class="col-12 col-md-9">山資字來著出，之美城有了好身建為中認個下中問廣中而，居以的，處個懷？球受法解女調石情早度人下體世久山比無定。</p>
+                            </li>
+                            <li class="row">
+                                <h4 class="fw-400 col-12 col-md-3 fz-s">如技資程賽大臺主</h4>
+                                <p class="col-12 col-md-9">建實界調坐，世女增除界要成比變出寶運他太；自奇子然物大去排；獲光一地母自晚？身信所本德他，注多等當往院可、居感發他辦？天向。</p>
+                            </li>
+                            <li class="row">
+                                <h4 class="fw-400 col-12 col-md-3 fz-s">是過生明統看大得</h4>
+                                <p class="col-12 col-md-9">力高王助變的知頭麼美終是得卻到上比下係得到讓設常分變書一跑己使價？又狀看一不花出念然處了力自造社面業院算，象眼。</p>
+                            </li>
+                            <li class="row">
+                                <h4 class="fw-400 dots col-12 col-md-3 fz-s">足早火後質突兒有</h4>
+                                <p class="col-12 col-md-9">公招生未態候！福見現三怎進海師；施單可在，許能是。風大的國文存電；未可他景，住場情前不還裡研少心經黨爸了當自。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="booking container py-8">
+        <div class="row">
+            <div class="googleMap col-12 col-lg-6 mb-4 mb-lg-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.310714195981!2d120.29811901496!3d22.604869485166137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9f297a86cf40dfb!2z6auY6ZuE6Luf6auU56eR5oqA5ZyS5Y2A!5e0!3m2!1szh-TW!2s!4v1501138708526" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+            <form class="needs-validation col-12 col-lg-6" novalidate>
+                <div class="form">
+                  <div class="mb-3">
+                    <label for="validationCustom01">姓名*</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="請輸入姓名" required>
+                    <div class="invalid-feedback">
+                        請輸入姓名
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationCustom02">電話號碼*</label>
+                    <input type="phone" class="form-control" id="validationCustom02" placeholder="請輸入電話號碼" required>
+                    <div class="invalid-feedback">
+                        請輸入電話號碼
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="enterEmail">Email</label>
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="enterEmail" placeholder="name@example.com" aria-describedby="inputGroupPrepend">
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="validationCustom02">請輸入人數*</label>
+                    <input type="number" class="form-control" id="validationCustom02" value="2" required>
+                </div>           
+                <div class="form-group mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" name="ifVege" type="radio" value="option1" id="neddVege" required>
+                    <label class="form-check-label" for="neddVege">需要素食
+                    </label>
+                    <div class="invalid-feedback">
+                      您必須選擇其中一個選項
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="ifVege" type="radio" value="option2" id="dontneedVege" required>
+                    <label class="form-check-label" for="dontneedVege">不需要素食
+                    </label>
+                  </div>
+                </div>
+                <ul class="d-flex justify-content-end">
+                    <li>
+                        <button class="btn btn-b-dark mr-1 fw-300" type="reset">取消</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-primary fw-300" type="submit">送出</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="joinus col-12 col-md-6 d-flex flex-column text-light p-8">
+                    <div class="textArea">
+                        <span>加入我們</span>
+                        <h3>前家研我物花它為中</h3>
+                        <p>組資也媽天也在這但門自，月多不山：我的如長速裡外面家，是老分它心非不；人加能樹地好因收，學生自臺天有對人……政我費基況系照了，依身到精，史終了發話以還來、大老知入是？</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <button class="btn btn-outline-warning">加入我們</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="taste col-12 col-md-6 d-flex flex-column text-light p-8">
+                    <div class="textArea">
+                        <span>品嚐佳餚</span>
+                        <h3>子收術無裡</h3>
+                        <p>中片表變生那運？高走毛年岸人是行月異選為小一聽一怎破後一容親，為陽要樓的不於調、多策相然是技統力，時子成……去個女人器有科！量終健跟立政動：態國紅方神分為車在。</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <button class="btn btn-outline-warning">品嚐佳餚</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray py-8">
+        <div class="container">
+            <ul class="d-flex justify-content-center justify-content-lg-start">
+                <li class="mr-3">© Copright 2017 六角學院</li>
+                <li class="mr-2"><a href="#">GitHub</a></li>
+                <li class="mr-2"><a href="#">Facebook</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>  
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
